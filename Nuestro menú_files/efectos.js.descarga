@@ -1,0 +1,86 @@
+// JavaScript Document
+
+function titular_banner(){
+	
+	setTimeout(function(){
+		$("#riquisimas").animate({top:"0px"},400);
+	},0);
+	
+	setTimeout(function(){
+		$("#suculentas").css("top","160px");
+		$("#riquisimas").animate({top:"-160px"},400);
+		$("#deliciosas").animate({top:"0px"},400);
+	},1400);
+	
+	setTimeout(function(){
+		$("#riquisimas").css("top","160px");
+		$("#deliciosas").animate({top:"-160px"},400);
+		$("#sabrosas").animate({top:"0px"},400);
+	},2800);
+	
+	setTimeout(function(){
+		$("#deliciosas").css("top","160px");
+		$("#sabrosas").animate({top:"-160px"},400);
+		$("#exquisitas").animate({top:"0px"},400);
+	},4200);
+	
+	setTimeout(function(){
+		$("#sabrosas").css("top","160px");
+		$("#exquisitas").animate({top:"-160px"},400);
+		$("#buenisimas").animate({top:"0px"},400);
+	},5600);
+	
+	setTimeout(function(){
+		$("#exquisitas").css("top","160px");
+		$("#buenisimas").animate({top:"-160px"},400);
+		$("#suculentas").animate({top:"0px"},400);
+	},7000);
+	
+	setTimeout(function(){
+		$("#buenisimas").css("top","160px");
+		$("#suculentas").animate({top:"-160px"},400);
+		titular_banner();
+	},8400);
+
+}
+
+$(function(){
+
+     $('a[href*=#contacto]').click(function() {
+
+     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+         && location.hostname == this.hostname) {
+
+             var $target = $(this.hash);
+
+             $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
+
+             if ($target.length) {
+
+                 var targetOffset = $target.offset().top;
+
+                 $('html,body').animate({scrollTop: targetOffset}, 1000);
+
+                 return false;
+
+            }
+
+       }
+
+   });
+
+});
+
+$(document).ready(function() {
+
+$("#cerrar_formulario").click(function(){
+	$("#degustacion_fondo").stop().fadeOut(600);
+	$("body").css("overflow","auto");
+})
+
+$("#mostrar_formulario").click(function(){
+	$("#degustacion_fondo").stop().fadeIn(600);
+	$("body").css("overflow","hidden");
+})
+
+})

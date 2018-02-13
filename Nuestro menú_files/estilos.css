@@ -1,0 +1,1565 @@
+@charset "utf-8";
+/* CSS Document */
+
+body,html{
+	width:100%;
+	height:100%;
+	margin:0px;
+	position:relative;
+}
+
+#degustacion_fondo{
+	width:100%;
+	height:100%;
+	background-color:#000000;
+	overflow:auto;
+	position:fixed;
+	top:0px;
+	left:0px;
+	display:none;
+	z-index:1000000
+}
+
+#degustacion{
+	max-width:470px;
+	height:950px;
+	margin:0px auto;
+	font-family:Open Sans;
+	padding-top:40px;
+	padding-left:43px;
+	padding-right:43px;
+	box-sizing:border-box;
+}
+
+#degustacion p#cerrar_formulario{
+	font-weight:bold;
+	text-align:right;
+	margin-top:0px;
+	cursor:pointer
+}
+
+#degustacion p.titulo{
+	font-size:25px;
+	font-weight:600;
+	margin-top:40px;
+	color:#FDC828
+}
+
+#degustacion p{
+	font-size:16px;
+	color:white
+}
+
+#degustacion form{
+	width:100%;
+	height:800px;
+	overflow:auto
+}
+
+#degustacion input.campos{
+	width:100%;
+	height:55px;
+	border:none;
+	border-radius:10px;
+	margin-top:12px;
+	margin-bottom:12px;
+	padding-left:17px;
+	box-sizing:border-box;
+	font-family:Open Sans;
+	font-size:16px;
+	color:#575756
+}
+
+#degustacion input[type="submit"]{
+	width:190px;
+	height:65px;
+	background-color:#FDC828;
+	margin-top:43px;
+	border:none;
+	border-radius:10px;
+	font-weight:bold;
+	font-family:Open Sans;
+	font-size:16px
+}
+
+.accion{
+	max-width:646px;
+	min-height:60px;
+	margin:0px auto;
+	margin-top:20px;
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+	align-self:center;
+}
+
+.accion div{
+	width:280px;
+	height:41px;
+	border-radius:10px;
+	text-align:center;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	vertical-align:middle
+}
+
+.accion div p, .accion div a{
+	font-family:Open Sans;
+	font-weight:bolder
+}
+
+.accion div.amarillo a{
+	font-family:Open Sans;
+	font-weight:bolder;
+	color:black;
+	display:inherit
+}
+
+.accion div.amarillo{
+	background-color:yellow;
+	font-size:16px
+}
+
+#mostrar_formulario{
+	cursor:pointer
+}
+
+.accion div.transparente{
+	border:3px solid white;
+	font-size:16px;
+	color:white
+}
+
+.accion div a{
+	color:white;
+	text-decoration:none;
+	display:none
+}
+
+#menu{
+	width:100%;
+	height:60px;
+	background-color:#000000;
+	border-top:3px solid #FFFF00;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	z-index:1000;
+	position:fixed;
+	top:0px;
+	left:0px
+}
+
+#menu p{
+	font-family:Open Sans;
+	font-size:17px;
+	color:white;
+}
+
+#menu img{
+	margin-left:140px;
+	margin-right:120px;
+}
+
+#menu div{
+	width:275px;
+	height:25px;
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+}
+
+#menu div div{
+	display:flex;
+	margin-left:5px;
+	align-items:center;
+	justify-content:center;
+}
+
+#menu div img{
+	margin-left:0px;
+	margin-right:10px;
+}
+
+.contenedor_principal{
+	max-width:1366px;
+	margin:0px auto;
+}
+
+#taquizas_40{
+	position:fixed;
+	z-index:10;
+	top:60px;
+	right:0px
+}
+
+#banner{
+	max-width:1602px;
+	height:850px;
+	margin:0px auto;
+	position:relative;
+	margin-top:60px;
+	overflow:hidden;
+	text-align:center;
+}
+
+div#banner.gracias{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	margin-top:0px
+}
+
+div.gracias p{
+	font-family:Pacifico Regular;
+	font-size:235px;
+	color:white;
+	margin-top:0px;
+	margin-bottom:0px;
+}
+
+#desde{
+	max-width:1000%;
+	height:32px;
+	display:flex;
+	margin-top:50px;
+	justify-content:center;
+	align-items:center
+}
+
+#desde p{
+	font-family:Open Sans;
+	font-size:13px;
+	color:white;
+	margin-left:25px;
+	margin-right:25px;
+}
+
+#banner.banner_taquiza{
+	height:auto;
+	min-height:850px;
+	background-image:url(imagenes/taquizas-ya/banner.jpg);
+	background-position:top;
+	background-repeat:repeat-y
+}
+
+#banner_comidas{
+	max-width:1602px;
+	height:618px;
+	margin:0px auto;
+	position:relative
+}
+
+#banner_comidas img.fondo{
+	z-index:1
+}
+
+#banner.banner_taquiza h1{
+	margin-top:10px;
+}
+
+#banner h1{
+	font-size:99px;
+	font-family:Alfa Slab One;
+	color:white;
+	line-height:120px;
+	letter-spacing:5px;
+	text-shadow:8px 8px 0px black;
+	max-width:860px;
+	margin:0px auto;
+	margin-top:300px;
+}
+
+#banner h1 span{
+	color:yellow;
+	font-size:117px;
+}
+
+.fondo{
+	position:absolute;
+	z-index:-10;
+	top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#banner_titulo{
+	max-width:950px;
+	min-height:80px;
+	margin:0px auto;
+	margin-top:240px;
+	display:flex;
+	flex-direction:row;
+}
+
+#banner_titulo div.taquizas{
+	width:488px;
+	color:white;
+}
+
+#banner_titulo div.eventos{
+	width:100%
+}
+
+#banner_titulo div.taquizas span{
+	color:yellow
+}
+
+div.cambiante{
+	max-width:870px;
+	height:110px;
+	margin:0px auto;
+	position:relative;
+	overflow:hidden;
+}
+
+div.cambiante p{
+	font-family:Alfa Slab One;
+	font-size:117px;
+	line-height:110px;
+	color:yellow;
+	text-shadow:8px 8px 0px black;
+	margin-top:0px;
+	position:absolute;
+	top:160px;
+	left:-50%;
+	right:-50%
+}
+
+.banner_subtitulo{
+	font-family:Open Sans;
+	font-size:17pt;
+	max-width:870px;
+	font-weight:400;
+	margin:0px auto;
+	margin-top:2px;
+	margin-bottom:0px;
+	color:white
+}
+
+.banner_subtitulo span{
+	font-weight:bolder
+}
+
+.fondo_amarillo{
+	width:100%;
+	padding-top:40px;
+	padding-bottom:40px;
+	padding-left:5px;
+	padding-right:5px;
+	box-sizing:border-box;
+	text-align:center;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	background-color:#FFF212
+}
+
+#apasionados p{
+	font-family:Open Sans;
+	font-size:13pt;
+	max-width:790px;
+	margin-top:3px
+}
+
+#apasionados p.apasionados{
+	font-family:Fredericka the Great;
+	font-size:35px;
+	max-width:auto;
+	margin-top:7px
+}
+
+#apasionados p.apasionados_fin{
+	font-family:Open Sans;
+	font-weight:600;
+	font-style:italic
+}
+
+#cazuela{
+	max-width:1366px;
+	min-height:705px;
+	margin:0px auto;
+	display:flex;
+	flex-direction:row-reverse;
+	align-items:flex-end;
+	background-image:url(imagenes/taquizas-ya/cazuela.jpg)
+}
+
+#cazuela div#cazuela_titulo{
+	width:50%;
+	min-height:108px;
+	text-align:center;
+	padding-left:15px;
+	padding-right:15px;
+	box-sizing:border-box;
+	background-color:white;
+	display:none
+}
+
+#cazuela div#cazuela_titulo p{
+	font-family:Alfa Slab One;
+	font-size:27pt;
+	margin-top:12px;
+	margin-bottom:12px;
+}
+
+#cazuela div#guisos{
+	width:50%;
+	min-height:705px;
+	text-align:center;
+	padding-top:10px;
+	padding-bottom:10px;
+	box-sizing:border-box;
+	background-image:url(imagenes/taquizas-ya/fondo_negro.png);
+	display:flex;
+	align-items:center
+}
+
+#cazuela div#guisos div{
+	margin:0px auto;
+	padding-left:15px;
+	padding-left:15px;
+	box-sizing:border-box
+}
+
+#cazuela div#guisos p{
+	font-family:Open Sans;
+	font-size:16px;
+	max-width:593px;
+	margin:0px auto;
+	color:white
+}
+
+#cazuela div#guisos p.titulo{
+	font-family:Alfa Slab One;
+	font-size:35pt;
+	margin-top:0px;
+	margin-bottom:20px;
+	color:white
+}
+
+#cazuela div#guisos p.prohibido{
+	font-family:Alfa Slab One;
+	font-size:19pt;
+	margin-top:0px;
+	margin-bottom:30px;
+	color:#FF6600
+}
+
+#cazuela div#guisos div#comidas{
+	max-width:560px;
+	min-height:130px;
+	margin:0px auto;
+	margin-top:0px;
+	margin-bottom:30px;
+	padding:0px;
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+	justify-content:space-between;
+	align-items:center;
+	align-content:space-between;
+}
+
+#guisos div#comidas div{
+	width:135px;
+	height:58px;
+	background-image:url(imagenes/taquizas-ya/cuadro_amarillo.png);
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+
+#cazuela div#guisos div#comidas div p{
+	font-family:Open Sans;
+	font-weight:600;
+	font-size:13px;
+	max-width:90px;
+	color:black;
+	margin:0px auto
+}
+
+#fotos{
+	display:flex;
+	flex-direction:row
+}
+
+#fotos div{
+	width:50%;
+	line-height:0
+}
+
+#fotos div img{
+	width:100%;
+}
+
+#invitados_felices{
+	width:100%;
+	padding-top:85px;
+	padding-bottom:85px;
+	padding-left:15px;
+	padding-right:15px;
+	box-sizing:border-box;
+	background-color:#000000;
+	text-align:center
+}
+
+#invitados_felices p.titulo{
+	font-family:Alfa Slab One;
+	font-size:35pt;
+	color:#FFFF00;
+	margin-top:0px;
+	margin-bottom:18px;
+	max-width:100%
+}
+
+#invitados_felices p.texto{
+	font-family:Open Sans;
+	font-size:19pt;
+	font-weight:600;
+	color:white;
+	max-width:990px;
+	margin:0px auto;
+	margin-top:0px;
+}
+
+#invitados_felices div.accion p{
+	font-size:16pt
+}
+
+#aun_no{
+	text-align:center;
+	padding-top:30px;
+	padding-bottom:30px;
+	box-sizing:border-box
+}
+
+#aun_no p.titulo{
+	font-family:Alfa Slab One;
+	font-size:35pt;
+	font-weight:500;
+	color:#000000;
+	margin-top:0px;
+	margin-bottom:8px;
+}
+
+#aun_no p{
+	font-family:Open Sans;
+	font-weight:bold;
+	font-size:17pt;
+	margin-top:0px;
+	margin-bottom:0px;
+}
+
+#platillos{
+	text-align:center;
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+	justify-content:center;
+	align-items:center;
+	min-height:904px;
+}
+
+#platillos div{
+	width:50%;
+	height:452px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	position:relative;
+	overflow:hidden
+}
+
+#platillos div div{
+	width:90%;
+	height:90%;
+	border:2px solid white;
+	border-radius:10px;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+}
+
+#platillos div div div{
+	min-height:75px;
+	flex-direction:row;
+	border:none;
+	overflow:visible
+}
+
+#platillos div div div img{
+	margin-left:15px;
+	margin-right:15px;
+}
+
+#platillos div img.fondo{
+	position:absolute;
+	z-index:-10;
+	top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#platillos p{
+	font-family:Open Sans;
+	font-size:19pt;
+	color:white;
+	max-width:540px;
+	margin-top:0px;
+}
+
+#platillos p.titulo{
+	color:white;
+	font-family:Alfa Slab One;
+	font-size:35pt;
+	max-width:450px;
+	margin-top:0px;
+	margin-bottom:25px;
+	padding-bottom:12px;
+	border-bottom:1px solid #FFFF00
+}
+
+#pie{
+	width:100%;
+	min-height:36px;
+	background-color:#FFCA00;
+}
+
+#pie div.contenedor_principal{
+	height:100%;
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+	align-items:center;
+}
+
+#pie div.contenedor_principal div{
+	width:auto;
+	min-height:70px;
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+	align-items:center
+}
+
+#pie div.contenedor_principal div p{
+	margin-left:10px;
+	margin-right:10px
+}
+
+#pie_telefonos{
+	font-family:Open Sans;
+	font-size:17px;
+	font-weight:bold
+}
+
+#pie_registrado{
+	font-family:Open Sans;
+	font-size:16px;
+	text-align:center
+}
+
+#pie_telefonos img{
+	vertical-align:middle;
+	margin-right:5px
+}
+
+#contacto{
+	max-width:800px;
+	margin:0px auto;
+	padding-left:15px;
+	padding-right:15px;
+	padding-top:40px;
+	box-sizing:border-box;
+	text-align:center
+}
+
+#contacto p.titulo{
+	font-family:Alfa Slab One;
+	font-size:40px;
+	font-weight:100;
+	margin-top:0px;
+	margin-bottom:65px;
+	text-align:center
+}
+
+#contacto div{
+	max-width:700px;
+	min-height:50px;
+	margin:0px auto;
+	text-align:left;
+}
+
+#contacto div.contacto_telefono{
+	display:flex;
+	flex-direction:row;
+}
+
+#contacto div div{
+	width:50%;
+	min-height:50px;
+}
+
+label{
+	font-family:Open Sans Semibold;
+	font-weight:500;
+	font-size:19px;
+	margin-top:0px;
+}
+
+form{
+	max-width:700px;
+	margin:0px auto
+}
+
+#contacto input{
+	display:block;
+	width:100%;
+	margin-top:5px;
+	margin-bottom:7px;
+	background-color:#FFCA00;
+	border:none;
+	border-bottom:3px solid black
+}
+
+#contacto div.boton{
+	padding-top:40px;
+	padding-bottom:40px;
+}
+
+#contacto div.boton input[type="submit"]{
+	width:222px;
+	height:54px;
+	border:3px solid black;
+	border-radius:20px;
+	font-family:Open Sans Semibold;
+	font-size:19px;
+	margin:0px auto
+}
+
+input[type="submit"]:hover{
+	cursor:pointer
+}
+
+#contacto div div input{
+	width:90%
+}
+
+#contacto div div input.completo{
+	width:100%
+}
+
+#menu_banquete{
+	width:100%;
+}
+
+.platillo{
+	max-width:1266px;
+	min-height:622px;
+	margin:0px auto;
+	margin-top:35px;
+	margin-bottom:35px;
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+	justify-content:center;
+	align-items:center;
+}
+
+.platillo div.taquiza{
+	width:100%;
+	display:flex;
+	flex-direction:row;
+	justify-content:center;
+	align-items:center;
+}
+
+.platillo_info{
+	width:50%;
+	min-height:622px;
+}
+
+.platillo_foto{
+	width:50%;
+	height:622px;
+}
+
+.platillo_foto{
+	position:relative;
+	overflow:hidden
+}
+
+.platillo_foto div{
+	width:302px;
+	height:279px;
+	background-color:#E1FFC1;
+	text-align:center;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center
+}
+
+.platillo_info{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	text-align:center
+}
+
+.platillo_info div{
+	width:100%;
+	padding-left:15px;
+	padding-right:15px;
+	box-sizing:border-box
+}
+
+.platillo_info img{
+	margin-bottom:20px
+}
+
+.platillo_foto div img{
+	margin-bottom:20px
+}
+
+.platillo_info p.advertencia{
+	font-family:Alfa Slab One;
+	font-size:19px;
+	margin-top:0px;
+	margin-bottom:30px;
+}
+
+.platillo_info p.titulo, .platillo_foto div p.titulo{
+	font-family:Alfa Slab One;
+	font-size:45px;
+	margin-top:0px;
+	margin-bottom:15px;
+}
+
+.platillo_info p.subtitulo, .platillo_foto div p.subtitulo{
+	font-family:Open Sans;
+	font-weight:bold;
+	font-size:14pt;
+	font-style:italic;
+	margin-top:0px;
+	margin-bottom:15px;
+}
+
+.platillo_info p.texto, .platillo_foto div p.texto{
+	font-family:Open Sans Semibold;
+	font-size:14pt;
+	max-width:415px;
+	margin:0px auto;
+	margin-bottom:15px;
+	margin-top:0px
+}
+
+.platillo_info p.texto span{
+	font-family:Open Sans;
+	font-weight:bolder
+}
+
+.platillo_foto div p.texto{
+	font-size:12pt;
+	max-width:188px;
+}
+
+.platillo_info p.ademas{
+	font-family:Open Sans Semibold;
+	font-size:14pt;
+	font-style:italic;
+	margin-top:0px;
+	margin-bottom:10px;
+	color:#FF6600
+}
+
+.platillo_info p.marcacion_especial{
+	color:#FF0000;
+	margin-top:90px
+}
+
+.platillo_info div.menu{
+	max-width:560px;
+	min-height:60px;
+	margin:0px auto;
+	margin-top:25px;
+	margin-bottom:20px;
+	padding:0px;
+	display:flex;
+	flex-direction:row;
+	justify-content:center;
+	align-content:center;
+	flex-wrap:wrap;
+}
+
+.platillo_info div.menu div{
+	width:135px;
+	height:58px;
+	margin-left:2px;
+	margin-right:2px;
+	padding:0px;
+	display:flex;
+	justify-content:center;
+	align-items:center
+}
+
+.platillo_info div.menu div p{
+	font-family:Open Sans Semibold;
+	font-weight:500;
+	font-size:12pt;
+	line-height:18px;
+	max-width:100px;
+	margin:0px auto;
+}
+
+.azul{
+	background-color:#D0FDF9
+}
+
+.naranja{
+	background-color:#FCC385
+}
+
+.verde{
+	background-color:#E1FFC1
+}
+
+.rosa{
+	background-color:#FFE0ED
+}
+
+.azul_cuadro{
+	background-image:url(imagenes/menu/azul_cuadro.png)
+}
+
+.naranja_cuadro{
+	background-image:url(imagenes/menu/naranja_cuadro.png)
+}
+
+.verde_cuadro{
+	background-image:url(imagenes/menu/verde_cuadro.png)
+}
+
+#gracias_contenedor{
+	width:100%;
+	height:320px;
+	background-image:url(imagenes/gracias/textura.jpg);
+	background-repeat:repeat;
+}
+
+#gracias{
+	max-width:715px;
+	min-height:485px;
+	margin:0px auto;
+	overflow:hidden;
+	padding-left:95px;
+	padding-right:95px;
+	box-sizing:border-box;
+	text-align:center;
+	position:relative;
+	top:-200px;
+	z-index:100000;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	align-content:space-between
+}
+
+#gracias p{
+	font-family:Open Sans;
+	font-size:25px;
+	color:white;
+	margin-bottom:10px;
+	margin-top:10px;
+}
+
+#gracias p.chile_chico{
+	font-family:Albondigas;
+	font-size:120px;
+}
+
+#gracias div{
+	width:222px;
+	height:53px;
+	margin:0px auto;
+	margin-top:10px;
+	margin-bottom:10px;
+	border:3px solid white;
+	border-radius:20px;
+	display:flex;
+	align-items:center;
+	justify-content:center
+}
+
+#gracias div a{
+	font-family:Open Sans Semibold;
+	font-size:19px;
+	margin-bottom:0px;
+	color:white;
+	text-decoration:none
+}
+
+@media screen and (max-width:1000px){
+
+#platillos p.titulo{
+	font-size:28pt;
+	max-width:450px;
+	margin-bottom:25px;
+	padding-bottom:12px;
+}
+
+#platillos p{
+	font-size:15pt;
+	max-width:540px;
+}
+
+#banner h1{
+	margin-top:230px;
+}
+
+}
+
+@media screen and (max-width:970px){
+#banner_titulo{
+	margin-top:190px;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+}
+
+#banner_titulo div.taquizas{
+	width:100%;
+	color:white;
+}
+
+#banner_titulo div.cambiante{
+	width:100%;
+	height:80px;
+}
+
+#banner_titulo div.cambiante p{
+	left:-50%;
+	right:-50%;
+}
+
+#menu img{
+	margin-left:80px;
+	margin-right:60px;
+}
+
+}
+
+@media screen and (max-width:870px){
+
+#cazuela div#guisos p.titulo{
+	font-size:27pt;
+	margin-top:0px;
+	margin-bottom:10px;
+	color:white
+}
+
+#platillos div div div{
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	margin-top:-10px;
+	margin-bottom:8px;
+}
+
+#platillos div div div img{
+	margin-top:5px;
+	margin-bottom:5px;
+}
+
+#platillos p.titulo{
+	margin-bottom:10px;
+	padding-bottom:12px;
+	border-bottom:1px solid #FFFF00
+}
+
+#banner h1{
+	font-size:87px;
+	margin-top:170px;
+}
+
+#banner h1 span{
+	font-size:102px;
+}
+
+div.cambiante p{
+	font-size:87px;
+}
+
+div#banner.gracias{
+	min-height:900px
+}
+
+div.gracias p{
+	font-size:180px;
+}
+
+}
+
+@media screen and (max-width:810px){
+
+#correo{
+	display:none
+}
+
+#menu{
+	justify-content:space-between;
+	padding-left:10px;
+	padding-right:10px;
+	box-sizing:border-box
+}
+
+#menu img#logo_menu{
+	margin:0px;
+	width:120px;
+}
+
+}
+
+@media screen and (max-width:750px){
+
+#cazuela{
+	max-width:750px;
+	min-height:1255px;
+	flex-direction:column-reverse;
+	align-items:flex-end;
+	align-content:flex-end
+}
+
+#cazuela div#cazuela_titulo{
+	width:100%;
+	min-height:108px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	background-color:white;
+}
+
+#cazuela div#guisos p.titulo{
+	display:none
+}
+
+#cazuela div#guisos{
+	width:100%;
+	min-height:450px;
+	background-color:#000000
+}
+
+#fotos{
+	flex-direction:column
+}
+
+#fotos div{
+	width:100%
+}
+
+#pie div.contenedor_principal{
+	flex-direction:column;
+	justify-content:center;
+}
+
+#pie div.contenedor_principal div{
+	min-height:30px;
+}
+
+.platillo_info p.titulo, .platillo_foto div p.titulo{
+	font-size:37px
+}
+
+.platillo_info img{
+	margin-bottom:15px
+}
+
+.platillo_info p.texto{
+	font-size:12pt;
+}
+
+.platillo_info p.ademas{
+	font-size:12pt;
+	margin-bottom:12px;
+}
+
+.platillo_info div.menu{
+	margin-top:17px;
+	margin-bottom:15px;
+}
+
+#contacto div{
+	text-align:left;
+}
+
+#contacto div.contacto_telefono{
+	flex-direction:column
+}
+
+#contacto div div{
+	width:100%;
+}
+
+#contacto div div input{
+	width:100%
+}
+
+#gracias{
+	min-height:485px;
+	padding-top:30px;
+}
+
+#gracias p{
+	font-size:25px;
+	margin-bottom:35px;
+}
+
+#gracias p.chile_chico{
+	font-size:120px;
+	margin-bottom:2s0px;
+}
+
+#gracias div a{
+	font-family:Open Sans Semibold;
+	font-size:19px;
+	margin-bottom:0px;
+	color:white;
+	text-decoration:none
+}
+
+}
+
+@media screen and (max-width:683px){
+
+#platillos{
+	flex-direction:column;
+}
+
+#platillos div{
+	width:100%;
+}
+
+#platillos div div div{
+	flex-direction:row;
+}
+
+#platillos div div div img{
+	margin-bottom:0px;
+	margin-right:0px;
+}
+
+#platillos p{
+	font-size:19pt;
+}
+
+#platillos p.titulo{
+	font-size:35pt;
+	margin-bottom:25px;
+}
+
+#banner h1{
+	margin-top:130px;
+}
+
+}
+
+@media screen and (max-width:670px){
+
+.accion{
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	margin-top:15px
+}
+
+.accion div{
+	margin-top:15px;
+	margin-bottom:15px;
+}
+
+#banner h1{
+	margin-top:85px;
+}
+
+}
+
+@media screen and (max-width:650px){
+	
+#banner_titulo{
+    margin-top:150px;
+}
+#banner_titulo p{
+	font-size:44pt;
+}
+
+.banner_subtitulo{
+	font-size:15pt;
+}
+
+.accion div{
+	height:50px;
+}
+
+#invitados_felices{
+	padding-top:60px;
+	padding-bottom:60px;
+}
+
+#invitados_felices p.titulo{
+	font-size:28pt;
+}
+
+#invitados_felices p.texto{
+	font-size:16pt;
+}
+
+}
+
+@media screen and (max-width:633px){
+	
+.platillo{
+	flex-direction:column-reverse;
+	justify-content:center;
+	align-items:center;
+	margin-top:45px;
+	margin-bottom:45px;
+}
+
+.invertido{
+	flex-direction:column;
+}
+
+.platillo div.taquiza{
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+}
+
+.platillo_foto, .platillo_info{
+	width:100%;
+}
+
+.platillo_foto{
+	height:auto
+}
+
+.platillo_foto div{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	position:absolute;
+	top:0px;
+	left:0px
+}
+
+.platillo_info{
+	padding-top:20px;
+	padding-bottom:20px;
+	box-sizing:border-box;
+}
+
+.platillo_foto img.fondo{
+	position:relative;
+	width:100%;
+	z-index:0;
+	top:0; 
+    left:0;
+	margin-bottom:-4px;
+    transform:none
+}
+
+.platillo_info p.titulo, .platillo_foto div p.titulo{
+	font-size:41px
+}
+
+.platillo_info img{
+	margin-bottom:50px
+}
+
+.platillo_info p.subtitulo{
+	font-size:15pt;
+	margin-bottom:20px;
+}
+
+.platillo_info p.texto{
+	font-size:14pt;
+}
+
+.platillo_info p.ademas{
+	font-size:14pt;
+	margin-bottom:15px;
+}
+
+.platillo_info div.menu{
+	margin-top:35px;
+	margin-bottom:30px;
+}
+
+.platillo_info div.menu div p{
+	font-size:13pt;
+}
+
+#banner h1{
+	font-size:65px;
+	margin-top:90px;
+}
+
+#banner h1 span{
+	font-size:76px;
+}
+
+div.cambiante p{
+	font-size:71px;
+}
+
+div.gracias p{
+	font-size:130px;
+}
+
+#gracias{
+	padding-top:5px;
+	padding-left:35px;
+	padding-right:35px;
+}
+
+#gracias p{
+	font-size:21px;
+	color:white;
+	margin-bottom:5px;
+	margin-top:5px;
+}
+
+#gracias p.chile_chico{
+	font-family:Albondigas;
+	font-size:120px;
+}
+
+#gracias div{
+	margin-top:5px;
+	margin-bottom:5px;
+}
+
+div.cambiante p{
+	line-height:70px;
+}
+
+}
+
+@media screen and (max-width:500px){
+
+#logo_pie img{
+	width:320px
+}
+
+#banner{
+	height:700px;
+}
+
+#banner h1{
+	font-size:43px;
+	margin-top:30px;
+	margin-bottom:50px;
+	line-height:80px;
+}
+
+#banner.banner_taquiza h1{
+	margin-bottom:5px;
+}
+
+#banner h1 span{
+	font-size:50px;
+}
+
+div.cambiante{
+	height:70px;
+	margin-top:0px
+}
+
+div.cambiante p{
+	font-size:50px;
+}
+
+div.transparente p{
+	display:none
+}
+
+.accion div a{
+	display:block
+}
+
+}
+
+@media screen and (max-width:450px){
+
+#menu p{
+	font-size:13px;
+}
+
+#menu div{
+	width:auto;
+}
+
+#menu div div{
+	width:auto;
+	margin-left:15px;
+}
+
+#menu div div img{
+	width:20px;
+	height:18px;
+	margin-right:0px;
+}
+
+#platillos div div div{
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	margin-top:-10px;
+	margin-bottom:8px;
+}
+
+#platillos div div div img{
+	margin-top:5px;
+	margin-bottom:5px;
+}
+
+#platillos p{
+	font-size:15pt;
+	max-width:540px;
+}
+
+#platillos p.titulo{
+	font-size:28pt;
+	margin-bottom:10px;
+	padding-bottom:12px;
+	border-bottom:1px solid #FFFF00
+}
+
+#banner_titulo{
+	margin-top:120px;
+}
+
+div.gracias p{
+	font-size:95px;
+}
+
+#gracias p{
+	font-size:21px;
+}
+
+}
+
+@media screen and (max-width:410px){
+
+#banner h1{
+	margin-bottom:20px;
+}
+
+}
