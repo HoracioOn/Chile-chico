@@ -83,4 +83,12 @@ $("#mostrar_formulario").click(function(){
 	$("body").css("overflow","hidden");
 })
 
+$(document).keyup(function(event){
+        if(event.which==27)
+        {
+            $("#degustacion_fondo").stop().fadeOut(600);
+												$("body").css("overflow","auto");
+        }
+    });
+
 })

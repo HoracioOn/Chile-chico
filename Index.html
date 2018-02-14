@@ -4,19 +4,21 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
-        <link href="Nuestro menú_files/style.css" rel="stylesheet" type="text/css">
+        <link href="nuestro_menu_files/style.css" rel="stylesheet" type="text/css">
         <link rel="shortcut icon" type="image/x-icon" href="http://www.chilechico.com.mx/favicon/5759chile_chico.ico">
-        <link href="Nuestro menú_files/css" rel="stylesheet">
-        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+        <link href="nuestro_menu_files/css" rel="stylesheet">
+        <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" 
+  rel="stylesheet"  type='text/css'>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <script src="Nuestro menú_files/jquery-1.9.1.min.js.descarga"></script>
-        <script src="Nuestro menú_files/efectos.js.descarga"></script>
+        <script src="nuestro_menu_files/jquery-1.9.1.min.js.descarga"></script>
+        <script src="nuestro_menu_files/efectos.js.descarga"></script>
         
         <title>Chile Chico | Comida para eventos</title>
         
         <!-- Global site tag (gtag.js) - Google Analytics -->
 
-        <script type="text/javascript" async="" src="./Nuestro menú_files/analytics.js.descarga"></script><script async="" src="./Nuestro menú_files/js"></script>
+        <script type="text/javascript" async="" src="nuestro_menu_files/analytics.js.descarga"></script>
+        <script async="" src="Nuestro_menú_files/js"></script>
 
         <script>
             window.dataLayer = window.dataLayer || [];
@@ -26,14 +28,53 @@
         </script>
     </head>
     <body>
+        
+        <div id="degustacion_fondo">
+  <div id="degustacion">
+    <span id="clox"><i class="fa fa-close fa-2x" id="cerrar_formulario"></i></span>
+    <p class="titulo">RESERVAR UNA DEGUSTACIÓN</p>
+    <p><strong>¿Listo?</strong><br/>Complete el siguiente formulario y le llamaremos para confirmar la cita, responder sus preguntas y       personalizar la degustación con nosotros.</p>
+    <form method="post" action="http://www.chilechico.com.mx/degustacion_eventos.php">
+      <input type="text" name="nombre" maxlength="120" placeholder="Nombre" class="campos" required>
+      <input type="email" name="correo" maxlength="120" placeholder="Correo" class="campos" required>
+      <input type="number" name="telefono" maxlength="120" placeholder="Teléfono" class="campos" required>
+      <input type="text" name="platillo" maxlength="120" placeholder="Seleccione un platillo" class="campos" required>
+      <input type="date" name="fecha" maxlength="120" placeholder="Fecha preferente" class="campos" required="">
+      <input type="text" name="mensaje" maxlength="120" placeholder="Algún mensaje extra..." class="campos" required>
+      <input type="submit" value="ENVIAR" name="enviar">
+    </form>
+  </div>
+</div>
+        
         <section id="menu">            
-            <div><span>hola@chilechico.com.mx</span></div>
-            <img id="logo_menu" src="Nuestro menú_files/logo_menu.png" alt="">            
-            <div><i class="fa fa-phone"></i><span>3653.5341</span><i class="fa fa-whatsapp"></i><span>33.1445.3089</span></div>
+            <div><i class="fa fa-envelope"></i><a href="mailto:hola@chilechico.com.mx">hola@chilechico.com.mx</a></div>
+            <img id="logo_menu" src="nuestro_menu_files/logo_menu.png" alt="Chile Chico">            
+            <div><i class="fa fa-phone"></i><a href="tel:36535341">36.53.53.41</a><i class="fa fa-whatsapp"></i><a href="tel:3314453089">33.1445.3089</a></div>
         </section>
-        <section>
-            <div>
+        <section id="ComidaEventosSec">
+            <img src="nuestro_menu_files/banner.png" alt="Atendemos diferentes tipos de eventos">
+            <h1 id="ComidaEventos">COMIDA PARA<br/><span id="txtEVENTOS">EVENTOS</span></h1>
+            <div id="encantados">
+                <p>¡Estaremos encantados de que nos invites!<br/>
+                    Preparamos comida riquisíma, <strong>¿No nos crees?</strong> puedes probarla sin ningún costo.</p>
+                <div class="accion">
+                    <div class="amarillo">
+                        <a id="mostrar_formulario">SOLICITAR MI DEGUSTACIÓN</a>
+                    </div>
+                    <div class="transparente">
+                        <a href="tel:36535341">LLÁMANOS: 36.53.53.41</a>
+                    </div>
+                </div>
             </div>
+        </section>
+        <section id="apasionados">
+            <div id="amarillo">
+                <img class="pulse" src="nuestro_menu_files/corazon.png" alt="Corazón">
+                <h2 id="apasiona2">Apasionados por la comida</h2>
+                <p id="fieles">En Chile chico somos fieles creyentes de que llenar la panza con comida rica es lo más importante, sin embargo, no       sólo hacemos eso, porque nosotros atendemos a sus invitados como si fueran nuestra propia familia.<br/>    
+                    <strong><em>Siempre tenemos el corazón puesto a la hora de servir.</em></strong></p>
+            </div>
+            
         </section>
     </body>
     

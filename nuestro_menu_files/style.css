@@ -1,0 +1,311 @@
+@charset "utf-8";
+/* CSS Document */
+
+#menu{
+	width:100%;
+	height:60px;
+	background-color:#000000;
+	border-top:3px solid #FFFF00;
+	display:flex;
+	justify-content:space-around;
+	align-items:center;
+	z-index:1000;
+	position:fixed;
+	top:0px;
+	left:0px;
+    font-family:Open Sans;
+	font-size:17px;
+	color:white;
+}
+
+#menu img{
+	position: fixed;
+	top: -18px;
+	}
+
+#menu a{
+	color:white;
+}
+
+#menu a:hover{
+	color:#FFFF00;
+	text-decoration: none;
+}
+
+i {
+	margin:5px;
+	color: #FFFF00;
+	}
+
+#ComidaEventosSec {
+	background-image: url(fondo-madera-min.png);
+	text-align: center;
+	padding-bottom: 55px;
+}
+
+#ComidaEventosSec p {
+	color: white;
+	padding: 15px;
+	margin: 35px;
+		font-size:1.2em;
+
+}
+
+#ComidaEventosSec img {
+	display: block;
+	margin-left: auto;
+	margin-right:	auto;
+	width: 90%;
+	padding: 15px;
+}
+
+#ComidaEventos {
+	font-size:4.4em;
+	font-family:Alfa Slab One;
+	color:white;
+	letter-spacing:5px;
+	text-shadow:8px 8px 0px black;
+	margin:0px auto;
+	margin-top: -185px;
+}
+
+#txtEVENTOS {
+	font-size: 1.3em;
+	-webkit-animation: color-change 7s infinite;
+	-moz-animation: color-change 7s infinite;
+	-o-animation: color-change 7s infinite;
+	-ms-animation: color-change 7s infinite;
+	animation: color-change 7s infinite;
+}
+
+@-webkit-keyframes color-change {
+	0% { color: red; }
+	50% { color: #FFFF00; }
+	100% { color: red; }
+}
+
+@-moz-keyframes color-change {
+	0% { color: red; }
+	50% { color: #FFFF00; }
+	100% { color: red; }
+}
+
+@-ms-keyframes color-change {
+	0% { color: red; }
+	50% { color: #FFFF00; }
+	100% { color: red; }
+}
+
+@-o-keyframes color-change {
+	0% { color: red; }
+	50% { color: #FFFF00; }
+	100% { color: red; }
+}
+@keyframes color-change {
+	0% { color: red; }
+	50% { color: #FFFF00; }
+	100% { color: red; }
+}
+
+
+#degustacion_fondo{
+	width:100%;
+	height:100%;
+	background-color:#000000;
+	overflow:auto;
+	position:fixed;
+	top:0px;
+	left:0px;
+	display:none;
+	z-index:1000000;
+}
+
+#degustacion{
+	display: flex;
+	flex-direction: column;
+	max-width:470px;
+	height:950px;
+	margin:0px auto;
+	font-family:Open Sans;
+	padding-top:40px;
+	padding-left:43px;
+	padding-right:43px;
+	box-sizing:border-box;
+}
+
+#clox {
+	margin-left: auto;
+}
+
+#cerrar_formulario{
+	
+	font-weight:bold;
+	margin-top:0px;
+	cursor:pointer;
+}
+
+#degustacion p.titulo{
+	font-size:25px;
+	font-weight:600;
+	margin-top:40px;
+	color:#FDC828;
+}
+
+#degustacion p{
+	font-size:16px;
+	color:white;
+}
+
+#degustacion form{
+	width:100%;
+	height:800px;
+	overflow:auto;
+}
+
+#degustacion input.campos{
+	width:100%;
+	height:50px;
+	border:none;
+	border-radius:10px;
+	margin-top:12px;
+	margin-bottom:12px;
+	padding-left:17px;
+	box-sizing:border-box;
+	font-family:Open Sans;
+	font-size:16px;
+	color:#575756;
+}
+
+#degustacion input[type="submit"]{
+	width:190px;
+	height:65px;
+	background-color:#FDC828;
+	margin-top:43px;
+	border:none;
+	border-radius:10px;
+	font-weight:bold;
+	font-family:Open Sans;
+	font-size:16px
+}
+
+.accion{
+	max-width:646px;
+	min-height:60px;
+	margin:0px auto;
+	margin-top:20px;
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+	align-self:center;
+}
+
+.accion div{
+	width:280px;
+	height:41px;
+	border-radius:10px;
+	text-align:center;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	vertical-align:middle
+}
+
+.accion div p, .accion div a{
+	font-family:Open Sans;
+	font-weight:bolder;
+}
+
+.accion div.amarillo a{
+	font-family:Open Sans;
+	font-weight:bolder;
+	color:black;
+	display:inherit;
+}
+
+.accion div.amarillo a:hover {
+	font-family:Open Sans;
+	font-weight:bolder;
+	color:red;
+	display:inherit;
+}
+
+.accion div.amarillo{
+	background-color:yellow;
+	font-size:16px;
+}
+
+#mostrar_formulario{
+	cursor:pointer;
+}
+
+.accion div.transparente{
+	border:3px solid white;
+	font-size:16px;
+	color:white;
+}
+
+.accion div a{
+	color:white;
+	text-decoration:none;
+}
+
+.accion div a:hover {
+	color:#FFFF00;
+	text-decoration:none;
+}
+
+.pulse {
+  -webkit-animation-name: pulse2;
+          animation-name: pulse2;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear; }
+
+@-webkit-keyframes pulse2 {
+  0% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1); }
+  50% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8); }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
+
+@keyframes pulse2 {
+  0% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1); }
+  50% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8); }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
+
+#amarillo {
+	width:100%;
+	padding-top:40px;
+	padding-bottom:40px;
+	padding-left:5px;
+	padding-right:5px;
+	box-sizing:border-box;
+	text-align:center;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	background-color:#FFF212;
+}
+
+#apasiona2{
+	font-family:Fredericka the Great;
+	font-size:35px;
+	margin-top:7px;	
+}
+
+#fieles {
+	width: 60%;
+}
