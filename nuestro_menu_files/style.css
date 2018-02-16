@@ -1,6 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
 
+/* ::::::::::::::::::::::::::::::::::::::::: Estilo del menú */
 #menu{
 	width:100%;
 	height:60px;
@@ -36,6 +37,9 @@ i {
 	margin:5px;
 	color: #FFFF00;
 	}
+
+
+/* ::::::::::::::::::::::::::::::::::::::::: Sección de "Comida para eventos" */
 
 #ComidaEventosSec {
 	background-image: url(fondo-madera-min.png);
@@ -78,6 +82,9 @@ i {
 	animation: color-change 7s infinite;
 }
 
+
+/* ::::::::::::::::::::::::::::::::::::::::: Efecto de cambio de color en la palabra "EVENTOS" */
+
 @-webkit-keyframes color-change {
 	0% { color: red; }
 	50% { color: #FFFF00; }
@@ -107,6 +114,8 @@ i {
 	100% { color: red; }
 }
 
+
+/* ::::::::::::::::::::::::::::::::::::::::: Estilo del modal con formulario de contacto  */
 
 #degustacion_fondo{
 	width:100%;
@@ -188,7 +197,7 @@ i {
 	font-size:16px
 }
 
-.accion{
+.calltoaction{
 	max-width:646px;
 	min-height:60px;
 	margin:0px auto;
@@ -199,7 +208,7 @@ i {
 	align-self:center;
 }
 
-.accion div{
+.calltoaction div{
 	width:280px;
 	height:41px;
 	border-radius:10px;
@@ -210,26 +219,26 @@ i {
 	vertical-align:middle
 }
 
-.accion div p, .accion div a{
+.calltoaction div p, .calltoaction div a{
 	font-family:Open Sans;
 	font-weight:bolder;
 }
 
-.accion div.amarillo a{
+.calltoaction div.amarillo a{
 	font-family:Open Sans;
 	font-weight:bolder;
 	color:black;
 	display:inherit;
 }
 
-.accion div.amarillo a:hover {
+.calltoaction div.amarillo a:hover {
 	font-family:Open Sans;
 	font-weight:bolder;
 	color:red;
 	display:inherit;
 }
 
-.accion div.amarillo{
+.calltoaction div.amarillo{
 	background-color:yellow;
 	font-size:16px;
 }
@@ -238,18 +247,18 @@ i {
 	cursor:pointer;
 }
 
-.accion div.transparente{
+.calltoaction div.transparente{
 	border:3px solid white;
 	font-size:16px;
 	color:white;
 }
 
-.accion div a{
+.calltoaction div a{
 	color:white;
 	text-decoration:none;
 }
 
-.accion div a:hover {
+.calltoaction div a:hover {
 	color:#FFFF00;
 	text-decoration:none;
 }
@@ -308,4 +317,56 @@ i {
 
 #fieles {
 	width: 60%;
+}
+
+#platillopozole {
+	padding: 45px 45px 0 45px;
+	display: flex;
+	flex-flow: row wrap;
+}
+
+#imgpozole {	
+	flex: 1 1 50%;
+}
+
+#infopozole {
+	text-align: center;
+	background-color:#D0FDF9;
+	flex: 1 3 47%;
+	padding: 21px;
+}
+
+.titulo {
+ font-family:Alfa Slab One;
+	font-size:45px;
+	margin-top:0px;
+}
+
+.subtitulo {
+ font-size:15pt;
+}
+
+#infopozole div.menu {
+	justify-content: center;
+	padding:15px;
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+	align-content: center;
+	font-family:Open Sans Semibold;
+	font-weight:500;
+	font-size:12pt;
+	line-height:18px;
+	margin:0px auto;
+}
+
+div.bloques{
+	width: 135px;
+ height: 58px;
+ margin-left: 2px;
+ margin-right: 2px;
+ padding: 5px;
+ display: flex;
+	align-items: center;
+	justify-content: center;
 }

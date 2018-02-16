@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- saved from url=(0029)http://www.chilechico.com.mx/ -->
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -7,19 +6,22 @@
         <link href="nuestro_menu_files/style.css" rel="stylesheet" type="text/css">
         <link rel="shortcut icon" type="image/x-icon" href="http://www.chilechico.com.mx/favicon/5759chile_chico.ico">
         <link href="nuestro_menu_files/css" rel="stylesheet">
+        
+        <!-- FONT AWESOME 4.3 -->
         <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" 
   rel="stylesheet"  type='text/css'>
+        <!-- BOOTSTRAP V4 -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <!-- JQUERY 1.9.1 -->
         <script src="nuestro_menu_files/jquery-1.9.1.min.js.descarga"></script>
+        <!-- JAVASCRIPT DEL FORMULARIO MODAL Y DE LOS TEXTOS INTERCAMBIABLES -->
         <script src="nuestro_menu_files/efectos.js.descarga"></script>
         
         <title>Chile Chico | Comida para eventos</title>
         
         <!-- Global site tag (gtag.js) - Google Analytics -->
-
-        <script type="text/javascript" async="" src="nuestro_menu_files/analytics.js.descarga"></script>
-        <script async="" src="Nuestro_menú_files/js"></script>
-
+        <script type="text/javascript" async src="nuestro_menu_files/analytics.js.descarga"></script>
+        <script async src="nuestro_menu_files/js"></script>
         <script>
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
@@ -27,37 +29,48 @@
             gtag('config', 'UA-72038883-3');
         </script>
     </head>
+    
+    
+    <!-- COMIENZA EL CUERPO DE LA WEB -->
     <body>
         
+        <!-- SECCIÓN OCULTA "MODAL DE FORMULARIO" -->
         <div id="degustacion_fondo">
-  <div id="degustacion">
-    <span id="clox"><i class="fa fa-close fa-2x" id="cerrar_formulario"></i></span>
-    <p class="titulo">RESERVAR UNA DEGUSTACIÓN</p>
-    <p><strong>¿Listo?</strong><br/>Complete el siguiente formulario y le llamaremos para confirmar la cita, responder sus preguntas y       personalizar la degustación con nosotros.</p>
-    <form method="post" action="http://www.chilechico.com.mx/degustacion_eventos.php">
-      <input type="text" name="nombre" maxlength="120" placeholder="Nombre" class="campos" required>
-      <input type="email" name="correo" maxlength="120" placeholder="Correo" class="campos" required>
-      <input type="number" name="telefono" maxlength="120" placeholder="Teléfono" class="campos" required>
-      <input type="text" name="platillo" maxlength="120" placeholder="Seleccione un platillo" class="campos" required>
-      <input type="date" name="fecha" maxlength="120" placeholder="Fecha preferente" class="campos" required="">
-      <input type="text" name="mensaje" maxlength="120" placeholder="Algún mensaje extra..." class="campos" required>
-      <input type="submit" value="ENVIAR" name="enviar">
-    </form>
-  </div>
-</div>
+            <div id="degustacion">
+                <span id="clox">
+                    <i class="fa fa-close fa-2x" id="cerrar_formulario"></i>
+                </span>
+                <p class="titulo">RESERVAR UNA DEGUSTACIÓN</p>
+                <p><strong>¿Listo?</strong><br/>Complete el siguiente formulario y le llamaremos para confirmar la cita, responder sus preguntas y personalizar la degustación con nosotros.</p>
+                <form method="post" action="http://www.chilechico.com.mx/degustacion_eventos.php">
+                    <input type="text" name="nombre" maxlength="120" placeholder="Nombre" class="campos" required>
+                    <input type="email" name="correo" maxlength="120" placeholder="Correo" class="campos" required>
+                    <input type="number" name="telefono" maxlength="120" placeholder="Teléfono" class="campos" required>
+                    <input type="text" name="platillo" maxlength="120" placeholder="Seleccione un platillo" class="campos" required>
+                    <input type="date" name="fecha" maxlength="120" placeholder="Fecha preferente" class="campos" required="">
+                    <input type="text" name="mensaje" maxlength="120" placeholder="Algún mensaje extra..." class="campos" required>
+                    <input type="submit" value="ENVIAR" name="enviar">
+                </form>
+            </div>
+        </div>
         
-        <section id="menu">            
+        <!-- CABECERA FIJA EN LA PARTE SUPERIOR -->
+        <section id="menu">
             <div><i class="fa fa-envelope"></i><a href="mailto:hola@chilechico.com.mx">hola@chilechico.com.mx</a></div>
             <img id="logo_menu" src="nuestro_menu_files/logo_menu.png" alt="Chile Chico">            
             <div><i class="fa fa-phone"></i><a href="tel:36535341">36.53.53.41</a><i class="fa fa-whatsapp"></i><a href="tel:3314453089">33.1445.3089</a></div>
         </section>
+        
+        <!-- SECCIÓN "COMIDA PARA EVENTOS" -->       
         <section id="ComidaEventosSec">
             <img src="nuestro_menu_files/banner.png" alt="Atendemos diferentes tipos de eventos">
-            <h1 id="ComidaEventos">COMIDA PARA<br/><span id="txtEVENTOS">EVENTOS</span></h1>
+            <h1 id="ComidaEventos">COMIDA PARA<br/>
+                <span id="txtEVENTOS">EVENTOS</span>
+            </h1>
             <div id="encantados">
                 <p>¡Estaremos encantados de que nos invites!<br/>
                     Preparamos comida riquisíma, <strong>¿No nos crees?</strong> puedes probarla sin ningún costo.</p>
-                <div class="accion">
+                <div class="calltoaction">
                     <div class="amarillo">
                         <a id="mostrar_formulario">SOLICITAR MI DEGUSTACIÓN</a>
                     </div>
@@ -67,6 +80,8 @@
                 </div>
             </div>
         </section>
+        
+        <!-- SECCIÓN "APASIONADOS" -->
         <section id="apasionados">
             <div id="amarillo">
                 <img class="pulse" src="nuestro_menu_files/corazon.png" alt="Corazón">
@@ -76,11 +91,29 @@
             </div>
         </section>
         
-        <section id="menu_banquete">
-            <div id="amarillo">
-                
+        <!-- SECCIÓN "MENÚ PARA BANQUETE" -->
+        <section id="menu_banquete" class="container-fluid">
+            
+            <!-- PLATILLO "POZOLE" -->
+            <div id="platillopozole">
+                <div id="imgpozole"><img id="pozole" class="img-fluid" src="nuestro_menu_files/pozole.jpg" alt="Pozole a $50 pesos por persona"/></div>
+                <div id="infopozole">
+                    <p class="titulo">Pozoliza</p>
+                    <p class="subtitulo">Tradición en su evento</p>
+                    <img src="nuestro_menu_files/linea.png" alt="">
+                    <p class="texto">Servimos en tu evento nuestro tradicional pozole, pero no sólo es eso, te incluimos antojitos       mexicanos preparados al momento.</p>
+                    <div class="menu">
+                        <div class="bloques"><span>Sopes</span></div>
+                        <div class="bloques"><span>Flautas</span></div>
+                        <div class="bloques"><span>Tacos dorados</span></div>
+                        <div class="bloques"><span>Enchiladas</span></div>
+                        <div class="bloques"><span>Quesadillas</span></div>
+                        <div class="bloques"><span>Gorditas</span></div>
+                        <div class="bloques"><span>Tostadas</span></div>
+                    </div>
+                    <p class="ademas">Además, incluye:</p>
+                    <p class="texto">Agua Fresca, Salsas, Verduras, Chiles, todos los desechables y más.</p>
+                </div>
             </div>
-        </section>
-        
-        
+        </section> 
     </body>
